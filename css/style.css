@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arvo', serif;
+    background-color: black;
+    background: url('../background.jpeg');
+    background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
+    overflow-x:hidden;
+}
+
+h1 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+
+div.text {
+    /*background-color: black;*/
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    padding-top: 20px
+    color: white;
+
+}
+
+
+
+.row {
+    margin-left: 5%;
+}
+
+.question {
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+    font-size: 11px;
+    padding-left: 5px;
+}
+
+#answer {
+    color: red;
+}
+
