@@ -103,6 +103,8 @@ var game = {
   },
 
 
+
+
   // randomize an array
   randomizeArray: function(array){
     let randomizedArray = [];
@@ -171,7 +173,7 @@ var game = {
         return;
       }             
         self.nextQuestion();
-    }, 3000);
+    }, 2000);
   },
 
   // check if answer is correct & send to questionOver()
@@ -187,8 +189,7 @@ var game = {
     let $wrongAnsScore = $('<div>').addClass().text('wrong answers: ' + this.wrongAnswers);
     let $noAnsScore = $('<div>').addClass().text('did not answer: ' + this.noAnswers);
     let $scorDiv = $('<div>').addClass('score-board').append($correctAnsScore,$wrongAnsScore,$noAnsScore);
-    let $restartDiv = $('<div>').addClass('restart').text('Play Again')
-    $('div.info').html('you answered ' + Math.floor((this.correctAnswers/this.getNumOfQues())*100)+'% Correct!');
+    $('div.info').html('you answered ' + Math.floor((this.correctAnswers/this.getNumOfQues())*100)+'% correct!');
     $('div.board').append($scorDiv);
   }
 }
@@ -211,7 +212,7 @@ $( document ).ready(function() {
     possibleAnswersArray.push(thisQuestion.answer);
     let randomAnswersArray = game.randomizeArray(possibleAnswersArray);
 
-    // create possible answers node
+    // create possible answers
     let $thisAnswer1 = $('<button>').addClass('btn btn-custom')
       .attr('data-ans',randomAnswersArray[0]).text(randomAnswersArray[0]);
     let $thisAnswer2 = $('<button>').addClass('btn btn-custom')
