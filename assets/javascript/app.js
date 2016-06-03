@@ -33,8 +33,8 @@ var game = {
     },
     6: {
       question: "This term is normally used in baking. It means to combine butter, sugar, egg and flavoring until light and fluffy.",
-      answer: 'fold',
-      wrongAnswerArray: ['mix','whip','cream'],
+      answer: 'cream',
+      wrongAnswerArray: ['mix','whip','fold'],
     },
     7: {
       question: 'If you were julienning an onion, the resulting slices would be about the size of what?',
