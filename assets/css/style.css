@@ -30,14 +30,15 @@ h1 {
   color: white;
   font-family: 'Pacifico', cursive;
   font-size: 40px;
+  padding-top: 20%;
 }
 
 button, .start {
   color: black;
 }
 
-div {
-
+.question {
+  font-size: 18px;
 }
 
 a, .footer {
