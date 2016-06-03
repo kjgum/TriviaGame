@@ -1,0 +1,46 @@
+.wrapper{
+  height: 100%;
+}
+.top-buffer {
+  margin-top: 20px;
+}
+.btn-group-lg>.btn-custom{
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 80%;
+  opacity: .8;
+}
+
+
+body {
+    height: 100%;
+    font-family: 'Arvo', serif;
+    background-color: black;
+    background: url('../background.jpeg');
+    background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
+    overflow-x:hidden;
+    color: white;
+}
+
+h1 {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+button, .start {
+  color: black;
+}
+
+div {
+
+}
+
+a, .footer {
+  color: white;
+  font-size: 10px;
+}
