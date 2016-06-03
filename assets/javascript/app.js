@@ -57,14 +57,14 @@ var game = {
       wrongAnswerArray: ['ap','millet','chickpea'],
     },
     11: {
-      question: '',
-      answer: '',
-      wrongAnswerArray: ['','',''],
+      question: 'A boning knife is most commonly used for:',
+      answer: 'meat',
+      wrongAnswerArray: ['onions','herbs','garlic'],
     },
     12: {
-      question: '',
-      answer: '',
-      wrongAnswerArray: ['','',''],
+      question: 'A paring knife is most commonly used for:',
+      answer: 'peeling vegetables',
+      wrongAnswerArray: ['cutting salmon','cleaning meat','mincing garlic'],
     },
     13: {
       question: 'What is the preservation method called that cooks food and preserves it in its own fat?',
@@ -129,7 +129,6 @@ var game = {
       $('.info').html($('<span>').text('time left: '+self.timeLeft));
       // if out of time clear timer and move to next question
       if (self.timeLeft === 0) {
-        console.log("time is up!");
         clearInterval(self.timer);
         self.questionOver(true, false);
         return; 
@@ -148,7 +147,7 @@ var game = {
     self.quesNum++;
   },
 
-  // show answer & display outcome
+  // show answer / display outcome
   questionOver: function(didTimeout, isCorrect){
     var self = this
     // check if timed-out or answer is correct
@@ -184,8 +183,8 @@ var game = {
 
   // display scores and ask to play again
   gameOver: function(){
-    let $correctAnsScore = $('<div>').addClass().text('correct Answers: ' + this.correctAnswers);
-    let $wrongAnsScore = $('<div>').addClass().text('wrong Answers: ' + this.wrongAnswers);
+    let $correctAnsScore = $('<div>').addClass().text('correct answers: ' + this.correctAnswers);
+    let $wrongAnsScore = $('<div>').addClass().text('wrong answers: ' + this.wrongAnswers);
     let $noAnsScore = $('<div>').addClass().text('did not answer: ' + this.noAnswers);
     let $scorDiv = $('<div>').addClass('score-board').append($correctAnsScore,$wrongAnsScore,$noAnsScore);
     let $restartDiv = $('<div>').addClass('restart').text('Play Again')

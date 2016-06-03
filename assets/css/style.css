@@ -29,8 +29,14 @@ body {
 h1 {
   color: white;
   font-family: 'Pacifico', cursive;
-  font-size: 40px;
+  font-size: 45px;
   padding-top: 20%;
+}
+
+
+span {
+  text-align: right;
+  color: #c8c8c8;
 }
 
 button, .start {
@@ -45,3 +51,9 @@ a, .footer {
   color: white;
   font-size: 10px;
 }
+
+a:hover {
+  color: #c8c8c8;
+}
+
+
